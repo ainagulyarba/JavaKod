@@ -1,16 +1,17 @@
 package Replit;
 
-public class replit_harflerTekrarlamasi {
+import java.util.Scanner;
+
+public class replit_HarflerTekrarlamasi {
 
 	public static void main(String[] args) {
 		
-		String isim = "Mustafa";
+		Scanner scan =new Scanner(System.in);
+		System.out.println("Lutfen bir isim giriniz: ");
+		String isim = scan.next();
 
 		
-		System.out.println(isim.substring(5)+isim.substring(5)+isim.substring(5));  
-
-	
-		
+		System.out.println(isim.substring(isim.length()-2)+isim.substring(isim.length()-2)+isim.substring(isim.length()-2));
 		
 		
 	}
