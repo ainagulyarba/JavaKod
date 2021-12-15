@@ -27,18 +27,18 @@ public class Q11 {
 			arr[i]=scan.nextInt();
 		}
     	
+		fark(arr);	
+    	
+    }
+
+	private static void fark(int[] arr) {
+	
 		Arrays.sort(arr);
     	
     	System.out.println(Arrays.toString(arr));
     	
-    	int arr1[]=new int[arr.length];
+    
+    	System.out.println("En buyuk elemani ile en kucuk elemanin  farki: " + ((arr[arr.length-1])-arr[0]));
     	
-    	for (int i = 0; i < arr.length; i++) {
-			arr1[i]+=arr[i];
-		}
-    	
-    	System.out.println("En buyuk elemani ile en kucuk elemanının  farkı: " + ((arr1[arr.length-1])-arr1[0]));
-    	
-    	
-    }
+	}
 }
